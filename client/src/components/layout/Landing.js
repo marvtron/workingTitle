@@ -7,7 +7,7 @@ class Landing extends Component {
           <div className="col s12 center-align">
             <h4>
               <b>Find & Share</b> urban art{" "}
-              <span style={{ fontFamily: "Montserrat" }}>with friends</span>
+              <span style={{ fontFamily: "Montserrat", fontStyle:"italic"}}>with friends</span>
             </h4>
             <p className="flow-text grey-text text-darken-1">
             An application intended to make a fun 'geocache' type community for finding and sharing murals and street art with friends.

@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { logoutUser } from "../../actions/authActions";
+import Iframe from 'react-iframe'
+
+
 class Dashboard extends Component {
   onLogoutClick = e => {
     e.preventDefault();
@@ -17,8 +20,9 @@ return (
               <b>Hey there,</b> {user.name.split(" ")[0]}
               <p className="flow-text grey-text text-darken-1">
                 You are logged in!{" "}
-                <span style={{ fontFamily: "montserrat" }}>Welcome to Paint Pursuit!</span>
+                <span style={{ fontFamily: "montserrat", fontStyle:"italic" }}>Welcome to Paint Pursuit!</span>
               </p>
+              <Iframe src='https://www.juicer.io/api/feeds/paint-pursuit/iframe' frameborder='0' width='1000' height='1000' style='display:block margin:0, auto'></Iframe>
             </h4>
             <button
               style={{
