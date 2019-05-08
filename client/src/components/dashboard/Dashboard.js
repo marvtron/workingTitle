@@ -17,7 +17,7 @@ return (
               <b>Hey there,</b> {user.name.split(" ")[0]}
               <p className="flow-text grey-text text-darken-1">
                 You are logged in!{" "}
-                <span style={{ fontFamily: "montserrat" }}>Welcome to Paint Pursuit! 👏</span>
+                <span style={{ fontFamily: "montserrat" }}>Welcome to Paint Pursuit!</span>
               </p>
             </h4>
             <button
