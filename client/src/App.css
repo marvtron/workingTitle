@@ -10,3 +10,10 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+.nav {
+    color: black;
+}
+
+nav{
+    background-color: white;
+}
