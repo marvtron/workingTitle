@@ -8,7 +8,7 @@ body {
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
 }
 .nav {
     color: black;
@@ -16,4 +16,8 @@ body {
 
 nav{
     background-color: white;
+}
+
+nav a {
+  color: black;
 }

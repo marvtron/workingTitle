@@ -10,27 +10,30 @@ class Dashboard extends Component {
   super();
   this.state = {loadFeedClick: false};
   }
+
 loadFeedClick = () => {
   this.setState({
     loadFeedClick: true
   });
 }
-  onLogoutClick = e => {
-    e.preventDefault();
-    this.props.logoutUser();
-  };
-render() {
+
+onLogoutClick = e => {
+       e.preventDefault();
+     this.props.logoutUser();
+     };
+
+render(){
     const { user } = this.props.auth;
+    console.log(this.props);
 return (
+  <div>
       <div style={{ height: "75vh" }} className="container valign-wrapper">
         <div className="row">
           <div className="col s12 center-align">
-            <h4>
-              <b>Hey there,</b> {user.name.split(" ")[0]}
-              <p className="flow-text grey-text text-darken-1">
-                You are logged in!{" "}
-                <span style={{ fontFamily: "montserrat", fontStyle:"italic" }}>Welcome to Paint Pursuit!</span>
-              </p>
+            <h1>
+                <span style={{ fontFamily: "montserrat", fontStyle:"italic" }}>
+                  Hi {user.name}, Welcome to Paint Pursuit!
+                </span>
               <ul>
                 <li>
                   {this.state.loadFeedClick ?                
@@ -40,7 +43,7 @@ return (
                 </li>
               </ul>
               
-            </h4>
+            </h1>
             <button style={{
               width: "150px",
               borderRadius: "3px",
@@ -50,24 +53,26 @@ return (
            onClick={this.loadFeedClick}
            className="btn btn-small waves-effect waves-light hoverable indigo accent-3"
             >
-            <i className="material-icons left">palette</i>
+            <i className="material-icons left">dashboard</i>
               Load Feed
             </button>
-            <br></br>
-            <button
-              style={{
-                width: "150px",
-                borderRadius: "3px",
-                letterSpacing: "1.5px",
-                marginTop: "1rem"
-              }}
-              onClick={this.onLogoutClick}
-              className="btn btn-small waves-effect waves-light hoverable pink accent-3"
-            ><i className="material-icons left">block</i>
+ <br></br>
+            <button style={{
+              width: "150px",
+              borderRadius: "3px",
+              letterSpacing: "1.5px",
+              marginTop: "1rem"
+           }}
+           onClick={this.onLogoutClick}
+           className="btn btn-small waves-effect waves-light hoverable pink accent-3"
+            >
+            <i className="material-icons left">not_interested</i>
               Logout
             </button>
+            <br></br>
           </div>
         </div>
+      </div>
       </div>
     );
   }
