@@ -27,12 +27,12 @@ render(){
     console.log(this.props);
 return (
   <div>
-      <div style={{ height: "75vh" }} className="container valign-wrapper">
+      <div style={{ height: "100vh" }} className="container valign-wrapper">
         <div className="row">
           <div className="col s12 center-align">
             <h1>
                 <span style={{ fontFamily: "montserrat", fontStyle:"italic" }}>
-                  Hi {user.name}, Welcome to Paint Pursuit!
+                  Hello {user.name}, Welcome to Paint Pursuit!
                 </span>
               <ul>
                 <li>

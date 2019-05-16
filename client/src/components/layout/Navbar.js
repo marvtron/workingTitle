@@ -21,8 +21,15 @@ class Navbar extends Component {
             Paint Pursuit
             </Link>  
             <ul className="right hide-on-med-and-down">
-              <li><a href="/user/profile" style={{fontFamily: "monospace", color: "black"}}><i className="material-icons">person</i></a></li>
-              <li><a href="/friends" style={{fontFamily: "monospace", color: "black"}}><i className="material-icons">contacts</i></a></li>
+              <li>
+                <Link to = "/dashboard" style={{fontFamily: "monospace", color: "black"}}>
+                <i className="material-icons">home</i></Link></li>
+              <li>
+                <Link to = "/profile" style={{fontFamily: "monospace", color: "black"}}>
+                <i className="material-icons">person</i></Link></li>
+              <li>
+                <Link to="/friends" style={{fontFamily: "monospace", color: "black"}}>
+                <i className="material-icons">contacts</i></Link></li>
             </ul>
           </div>
         </nav>
