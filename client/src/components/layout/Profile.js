@@ -37,14 +37,14 @@ class Profile extends Component {
                   </span>
                 }
                 socials={
-                  <div>
+                  <div className ='socials center-align'>
                     <Button simple>
                     <i className="fab fa-facebook-square"></i>
                     </Button>
                     <Button simple>
                       <i className="fab fa-twitter" />
                     </Button>
-                    <Button simple>
+                    <Button simple >
                       <i className="fab fa-youtube" />
                     </Button>
                   </div>

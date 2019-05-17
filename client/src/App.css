@@ -11,11 +11,15 @@ body {
     background-size: 100% 100%;
 }
 
-.btn-simple {
-  display: flex;
-  flex-wrap: wrap;
+.socials {
+  justify-content: space-evenly;
 }
 
+.btn {
+  margin-left: 15px;
+  margin-bottom: 10px;
+  background-color: #9A9A9A;
+}
 .nav {
     color: black;
 }
@@ -96,8 +100,8 @@ nav a {
       font-weight: 300;
       text-align: center; }
     .card .avatar {
-      width: 30px;
-      height: 30px;
+      width: 20px;
+      height: 20px;
       overflow: hidden;
       border-radius: 50%;
       margin-right: 5px; }
@@ -182,26 +186,3 @@ nav a {
   .card-price .footer {
     padding: 5px 15px 10px; }
   
-  .card-user hr,
-  .card-price hr {
-    margin: 5px 15px; }
-  
-  .card-plain {
-    background-color: transparent;
-    box-shadow: none;
-    border-radius: 0; }
-    .card-plain .image {
-      border-radius: 4px; }
-  
-  .card-stats .icon-big {
-    font-size: 3em;
-    min-height: 64px; }
-    .card-stats .icon-big i {
-      font-weight: bold;
-      line-height: 59px; }
-  
-  .card-stats .numbers {
-    font-size: 2em;
-    text-align: right; }
-    .card-stats .numbers p {
-      margin: 0; }
