@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Iframe from 'react-iframe';
 import "../../App.css";
 
 class Friends extends Component {

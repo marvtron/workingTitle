@@ -37,7 +37,7 @@ return (
               <ul>
                 <li>
                   {this.state.loadFeedClick ?                
-              <Iframe src='https://www.juicer.io/api/feeds/paint-pursuit/iframe' frameborder='0' width='1000' height='1000' style='display:block margin:0, auto'></Iframe>
+              <Iframe src='https://www.juicer.io/api/feeds/paint-pursuit/iframe' frameborder='0' width='1000' height='1000'></Iframe>
                  : null
                   }
                 </li>
