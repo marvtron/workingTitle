@@ -1,20 +1,22 @@
 import React, { Component } from "react";
 import "../../App.css";
+import FriendCard from "../FriendCard/FriendCard";
 
-class Friends extends Component {
-    render(){
-        return(
-        <div>
-        <div style ={{ height: "100vh", fontFamily: "monospace"}} className="container valign-wrapper">
-            <div className="row">
-                <div className="col s12 center-align">
-                    <h1>You Don't Have Any Friends</h1>
-                </div>                
-            </div>
-        </div>
-        </div>
-        )
-        }
-        }
+class Friends extends Component {         
+  render() {
+        return (
+          <div>
+          <FriendCard></FriendCard>
+          <FriendCard></FriendCard>
+          <FriendCard></FriendCard>
+          <FriendCard></FriendCard>
+          <FriendCard></FriendCard>
+          <FriendCard></FriendCard>
+          <FriendCard></FriendCard>
+          <FriendCard></FriendCard>
+          </div>         
+        );
+      }
+    }    
 
   export default Friends;
