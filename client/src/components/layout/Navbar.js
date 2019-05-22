@@ -15,9 +15,9 @@ class Navbar extends Component {
                 fontFamily: "monospace"
               }}
               className="col s6 brand-logo center black-text"
-            >
-              <i className="material-icons">palette</i>
-            Paint Pursuit
+            >Unbridled Healing
+              <i class="fas fa-horse"></i>
+            
             </Link>  
             <ul className="right hide-on-med-and-down">
               <li>
