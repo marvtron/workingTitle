@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import {NavDropdown} from 'react-bootstrap';
 import { Link } from "react-router-dom";
 import '../../App.css';
 
@@ -27,8 +28,15 @@ class Navbar extends Component {
                 <Link to = "/profile" style={{fontFamily: "monospace", color: "black"}}>
                 <i className="material-icons">person</i></Link></li>
               <li>
-                <Link to="/friends" style={{fontFamily: "monospace", color: "black"}}>
-                <i className="material-icons">contacts</i></Link></li>
+              <NavDropdown title="Dropdown" id="nav-dropdown">
+          <NavDropdown.Item eventKey="4.1"><i className='material-icons'>arrow_drop_down</i></NavDropdown.Item>
+          <NavDropdown.Item eventKey="4.2">Another action</NavDropdown.Item>
+          <NavDropdown.Item eventKey="4.3">
+            Something else here
+          </NavDropdown.Item>
+          <NavDropdown.Divider />
+          <NavDropdown.Item eventKey="4.4">Separated link</NavDropdown.Item>
+        </NavDropdown></li>
             </ul>
           </div>
         </nav>

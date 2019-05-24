@@ -18,7 +18,7 @@ import avatar from "../../assets/img/faces/felix.jpg";
 class Profile extends Component {
   render() {
     return (
-      <div  style={{ fontFamily: "monospace"}} className="content">
+      <div  style={{ fontFamily: "monospace"}} className="content background2">
         <Container fluid>
           <Row>
           <Col md={4}>

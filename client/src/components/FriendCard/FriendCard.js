@@ -31,12 +31,12 @@ class FriendCard extends Component {
                         <Card style={{ width: '18rem', textTransform:'capitalize' }}>
                         <Card.Img className="center-align"variant="top" src={result.picture.large} alt="placeholder" style={{width:'50%', marginLeft:'60px'}} />
                         <Card.Body className='center-align'>
-                            <Card.Title>{result.name.first} {result.name.last}</Card.Title>
+                            <Card.Title> Dr. {result.name.first} {result.name.last}</Card.Title>
                         </Card.Body>
                         <ListGroup className="list-group-flush center-align">
-                            <ListGroupItem>Username: {result.login.username}</ListGroupItem>
+                            <ListGroupItem>Phone: {result.phone}</ListGroupItem>
                             <ListGroupItem>City: {result.location.city}</ListGroupItem>
-                            <ListGroupItem>Age: {result.dob.age}</ListGroupItem>
+                            <ListGroupItem>State: {result.location.state}</ListGroupItem>
                         </ListGroup>
                         <hr></hr>
                         <Card.Body className='center-align socials' style={{paddingBlock:'30px', marginTop:'25px'}}>

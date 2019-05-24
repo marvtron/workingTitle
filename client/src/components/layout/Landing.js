@@ -42,13 +42,15 @@ class Landing extends Component {
             </Card>
             <Card style={{ width: '100%', fontFamily: "Monospace", fontStyle:"italic" }}>
               <Card.Body>
-                <Card.Title></Card.Title>
-                <Card.Subtitle className="mb-2 text-muted"></Card.Subtitle>
+                <Card.Title style={{fontWeight:'bold', color:'black'}}>Your Mission, Should You Choose to Accept It</Card.Title>
+                <Card.Subtitle className="mb-2 text-muted">Get yourself well</Card.Subtitle>
                 <Card.Text>
-                <span></span>
+                <span> 
+                  For the most part, equine therapy is very very sparse in the US. After years of success in the UK, it seems to finally be gaining traction here.</span>
                 <br></br>
+                <span></span>
                 </Card.Text>
-                <Card.Link href="">Additional Info</Card.Link>
+                <Card.Link href="http://www.operationwearehere.com/EquineTherapy.html">Find someone near you</Card.Link>
               </Card.Body>
             </Card>
             </p>

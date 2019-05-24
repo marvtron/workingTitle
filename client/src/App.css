@@ -1,6 +1,6 @@
 body {
     /* The image used */
-    background-image: url('https://greatersfacnl.com/wp-content/uploads/layerslider/LayerSlider-5-responsive-demo-slider/bg6b.jpg');
+    /* background-image: url('http://berkshirehorseworks.com/wp-content/uploads/Veteran_with_Horse_21.png'); */
 
     /* Full height */
     height: 100%; 
@@ -9,6 +9,22 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
+}
+
+.background {
+  background-image:url(http://berkshirehorseworks.com/wp-content/uploads/Veteran_with_Horse_21.png);
+  background-size: 100%;
+}
+
+.background2{
+  background-image: linear-gradient(
+      to right, 
+      #d6eaff ,
+      #d6eaff  15%,
+      black 15%,
+      black 85%,
+      #d6eaff 85%
+    );
 }
 
 .socials {
@@ -43,8 +59,13 @@ div.image{
     /* margin-bottom: 30px;  */
     margin: 20px 5px 0px 20px;
     padding: 20px 20px;
-    width: 48%;
+    width: 80%;
   }
+
+.card-margin {
+  margin-left: 150px;
+}
+
     .card .image {
       width: 100%;
       overflow: hidden;
@@ -159,6 +180,11 @@ div.image{
       position: relative; }
       .card .alert.alert-with-icon {
         padding-left: 65px; }
+
+  .card-user{
+    justify-content: center;
+    margin-left: 150px;
+  }
   
   .card-user .image {
     height: 110px; }

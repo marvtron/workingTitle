@@ -26,13 +26,15 @@ render(){
     const { user } = this.props.auth;
     console.log(this.props);
 return (
-  <div>
-      <div style={{ height: "100vh" }} className="container valign-wrapper">
+  <div className='background'>
+      <div style={{ height: "100vh"}} className="container valign-wrapper">
         <div className="row">
           <div className="col s12 center-align">
             <h1>
-                <span style={{ fontFamily: "montserrat", fontStyle:"italic" }}>
-                  Hello {user.name}, Welcome to Paint Pursuit!
+                <span style={{ fontFamily: "monospace", fontStyle:"italic", color: '#fffef9'}}>
+                  <p style={{fontSize:'35px', textOverflow:''}}>Hello {user.name},
+                  <br></br> 
+                  Welcome to: Unbridled Healing</p>
                 </span>
               <ul>
                 <li>

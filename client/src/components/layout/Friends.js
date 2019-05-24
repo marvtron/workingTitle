@@ -5,7 +5,7 @@ import FriendCard from "../FriendCard/FriendCard";
 class Friends extends Component {         
   render() {
         return (
-          <div>
+          <div className='background2'>
           <FriendCard></FriendCard>
           <FriendCard></FriendCard>
           <FriendCard></FriendCard>
