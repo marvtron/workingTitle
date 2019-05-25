@@ -5,17 +5,39 @@ import '../../App.css';
 class Landing extends Component {
   render() {
     return (
-      <div style={{ height: "100%" }} className="container valign-wrapper">
+      <div style={{ height: "100%" }} className="container valign-wrapper background2">
         <div className="row">
           <div className="col s12 center-align">
-            <h4 style={{ fontFamily:'monospace'}}>
-              <b>Healing </b>
-              <span style={{ fontFamily: "Monospace"}}> Hooves</span>
+            <h4 style={{ fontFamily:'monospace', color:'white'}}>
+              <b>Working </b>
+              <span style={{ fontFamily: "Monospace", color:'white'}}> SubTitle</span>
             </h4>
             <br></br>
             <div className='image'>
-              <img className='object-fit_cover'src="http://www.floridamentalhealthhelpline.com/wp-content/uploads/2017/03/Unique-horse-assisted.jpg" alt="" style={{objectFit:'cover',backgroundColor: '#444'}}></img>
+              <img className='object-fit_cover'src="http://berkshirehorseworks.com/wp-content/uploads/Veteran_with_Horse_21.png" alt="" style={{objectFit:'cover',backgroundColor: '#444'}}></img>
             </div>
+            <br></br>
+            <a href='/register'
+              style={{
+                width: "150px",
+                borderRadius: "3px",
+                letterSpacing: "1.5px"
+              }}
+              className="btn btn-large waves-effect waves-light hoverable indigo accent-3"
+            >
+              Register
+            </a>
+            <a href='/login'
+              style={{
+                marginLeft: "2rem",
+                width: "150px",
+                borderRadius: "3px",
+                letterSpacing: "1.5px"
+              }}
+              className="btn btn-large waves-effect white hoverable black-text"
+            >
+              Log In
+            </a>
             <p className="flow-text grey-text text-darken-1">
             <Card style={{ width: '100%', marginTop:'30px', fontFamily: "Monospace", fontStyle:"italic" }}>
               <Card.Body>
@@ -55,27 +77,6 @@ class Landing extends Component {
             </Card>
             </p>
             <br />
-            <a href='/register'
-              style={{
-                width: "150px",
-                borderRadius: "3px",
-                letterSpacing: "1.5px"
-              }}
-              className="btn btn-large waves-effect waves-light hoverable indigo accent-3"
-            >
-              Register
-            </a>
-            <a href='/login'
-              style={{
-                marginLeft: "2rem",
-                width: "150px",
-                borderRadius: "3px",
-                letterSpacing: "1.5px"
-              }}
-              className="btn btn-large waves-effect white hoverable black-text"
-            >
-              Log In
-            </a>
           </div>
         </div>
       </div>

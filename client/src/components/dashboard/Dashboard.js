@@ -4,7 +4,6 @@ import { connect } from "react-redux";
 import { logoutUser } from "../../actions/authActions";
 import Iframe from 'react-iframe';
 
-
 class Dashboard extends Component {
   constructor(){
   super();
@@ -26,11 +25,12 @@ render(){
     const { user } = this.props.auth;
     console.log(this.props);
 return (
-  <div className='background'>
+  <div className='background2'>
       <div style={{ height: "100vh"}} className="container valign-wrapper">
         <div className="row">
           <div className="col s12 center-align">
             <h1>
+            <img className='object-fit_cover'src="http://www.floridamentalhealthhelpline.com/wp-content/uploads/2017/03/Unique-horse-assisted.jpg" alt="" style={{objectFit:'cover',backgroundColor: '#444'}}></img>
                 <span style={{ fontFamily: "monospace", fontStyle:"italic", color: '#fffef9'}}>
                   <p style={{fontSize:'35px', textOverflow:''}}>Hello {user.name},
                   <br></br> 

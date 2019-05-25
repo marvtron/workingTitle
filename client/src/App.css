@@ -11,6 +11,23 @@ body {
     background-size: 100% 100%;
 }
 
+.object-fit_cover{
+  max-width: 100%;
+  object-fit: cover;
+}
+
+#nav-dropdown {
+  color: black;
+}
+.nav-link {
+  color: black;
+}
+.dropdown-item {
+  padding: 0px;
+  color: black;
+  background-color: #DDDDDD;
+}
+
 .background {
   background-image:url(http://berkshirehorseworks.com/wp-content/uploads/Veteran_with_Horse_21.png);
   background-size: 100%;
@@ -26,6 +43,8 @@ body {
       #d6eaff 85%
     );
 }
+
+
 
 .socials {
   justify-content: space-evenly;

@@ -78,7 +78,8 @@ class Profile extends Component {
                           label: "Email address",
                           type: "email",
                           bsClass: "form-control",
-                          placeholder: "Email"
+                          placeholder: "Email",
+                          disabled: true
                         }
                       ]}
                     />
@@ -109,8 +110,8 @@ class Profile extends Component {
                           type: "text",
                           bsClass: "form-control",
                           placeholder: "Home Adress",
-                          defaultValue:
-                            "Brighton, UK"
+                          defaultValue: "Brighton, UK",
+                          disabled: true
                         }
                       ]}
                     />
@@ -122,20 +123,23 @@ class Profile extends Component {
                           type: "text",
                           bsClass: "form-control",
                           placeholder: "City",
-                          defaultValue: "Brighton"
+                          defaultValue: "Brighton",
+                          disabled: true
                         },
                         {
                           label: "Country",
                           type: "text",
                           bsClass: "form-control",
                           placeholder: "Country",
-                          defaultValue: "UK"
+                          defaultValue: "UK",
+                          disabled: true
                         },
                         {
                           label: "Postal Code",
                           type: "number",
                           bsClass: "form-control",
-                          placeholder: "ZIP Code"
+                          placeholder: "ZIP Code",
+                          disabled: true
                         }
                       ]}
                     />
