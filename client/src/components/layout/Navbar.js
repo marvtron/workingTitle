@@ -1,36 +1,34 @@
 import React, { Component } from "react";
-import {NavDropdown, Nav} from 'react-bootstrap';
+import { NavDropdown, Nav } from "react-bootstrap";
 import { Link, NavLink } from "react-router-dom";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { logoutUser } from "../../actions/authActions";
-import '../../App.css';
+import "../../App.css";
 
 class Navbar extends Component {
-  
-  constructor(){
+  constructor() {
     super();
-    this.state = {dropdownClick: true};
-    }
-  
+    this.state = { dropdownClick: false };
+  }
+
   dropdownClick = () => {
     this.setState({
-      dropdownClick: false
-    })
-  }
+      dropdownClick: true
+    });
+  };
 
   reverseDropdown = () => {
     this.setState({
       dropdownClick: !this.state.dropdownClick
-    })
-  }
+    });
+  };
 
   onLogoutClick = e => {
     e.preventDefault();
     this.props.logoutUser();
-  }
+  };
 
-  
   render() {
     return (
       <div className="navbar-fixed">
@@ -69,10 +67,14 @@ class Navbar extends Component {
 
               <li>
                 <NavDropdown
-                  onClick={this.reverseDropdown}
+                  onClick={this.dropdownClick}
                   title={<i className="material-icons">expand_more</i>}
                   id="nav-dropdown"
-                  style={{ color: "black", fontWeight: "bold" }}
+                  style={{
+                    color: "black",
+                    fontWeight: "bold",
+                    transorm: "none"
+                  }}
                 >
                   {this.state.dropdownClick ? (
                     <>
@@ -95,17 +97,18 @@ class Navbar extends Component {
                         </Nav.Link>
                       </NavDropdown.Item>
                       <NavDropdown.Item>
-                         <button style={{
-                          width: "150px",
-                          borderRadius: "3px",
-                          letterSpacing: "1.5px",
-                          marginTop: "1rem"
-                       }}
-                       onClick={this.onLogoutClick}
-                       className="btn btn-small waves-effect waves-light hoverable pink accent-3"
+                        <button
+                          style={{
+                            width: "150px",
+                            borderRadius: "3px",
+                            letterSpacing: "1.5px",
+                            marginTop: "1rem"
+                          }}
+                          onClick={this.onLogoutClick}
+                          className="btn btn-small waves-effect waves-light hoverable pink accent-3"
                         >
                           Logout
-                        </button>                        
+                        </button>
                       </NavDropdown.Item>
                     </>
                   ) : null}

@@ -8,6 +8,7 @@ class Vet extends Component {
             <div className='background2'>
               <div>
             <VetCard/>
+            <VetCard/>
             </div>
             </div>         
           );

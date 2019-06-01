@@ -44,8 +44,6 @@ body {
     );
 }
 
-
-
 .socials {
   justify-content: space-evenly;
 }
@@ -94,8 +92,12 @@ div.image{
       -webkit-transform-style: preserve-3d;
       -moz-transform-style: preserve-3d;
       transform-style: preserve-3d; }
-      .card .image img {
-        width: 100%; }
+      
+    .card .image img {
+      min-width: 100%;
+      max-height: 300%;
+     }
+     
     .card .filter {
       position: absolute;
       z-index: 2;

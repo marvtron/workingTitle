@@ -18,12 +18,14 @@ import avatar from "../../assets/img/faces/felix.jpg";
 class Profile extends Component {
   render() {
     return (
-      <div  style={{ fontFamily: "monospace"}} className="content background2">
+      <div style={{ fontFamily: "monospace" }} className="content background2">
         <Container fluid>
           <Row>
-          <Col md={4}>
+            <Col md={4}>
+              <br />
               <UserCard
-                bgImage= 'https://i.ytimg.com/vi/E5rESN5urWc/maxresdefault.jpg'
+                className="center-align"
+                bgImage="https://i.ytimg.com/vi/E5rESN5urWc/maxresdefault.jpg"
                 avatar={avatar}
                 name="Felix Arvid Ulf Kjellberg"
                 userName="PewDiePie"
@@ -31,20 +33,20 @@ class Profile extends Component {
                   <span>
                     "Don't be a salad,
                     <br />
-                    be the best damn broccoli 
+                    be the best damn broccoli
                     <br />
                     you could ever be."
                   </span>
                 }
                 socials={
-                  <div className ='socials center-align'>
+                  <div className="socials center-align">
                     <Button simple>
-                    <i className="fab fa-facebook-square"></i>
+                      <i className="fab fa-facebook-square" />
                     </Button>
                     <Button simple>
                       <i className="fab fa-twitter" />
                     </Button>
-                    <Button simple >
+                    <Button simple>
                       <i className="fab fa-youtube" />
                     </Button>
                   </div>
@@ -52,6 +54,7 @@ class Profile extends Component {
               />
             </Col>
             <Col md={8}>
+              <br />
               <Card
                 title="Edit Profile"
                 content={
