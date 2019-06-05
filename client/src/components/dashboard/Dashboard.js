@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { logoutUser } from "../../actions/authActions";
 import Iframe from "react-iframe";
+import Navbar from "../../components/layout/Navbar";
 
 class Dashboard extends Component {
   constructor() {
@@ -26,6 +27,7 @@ class Dashboard extends Component {
     console.log(this.props);
     return (
       <div className="background2">
+        <Navbar />
         <div style={{ height: "100vh" }} className="container valign-wrapper">
           <div className="row">
             <div className="col s12 center-align">

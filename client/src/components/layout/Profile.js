@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Navbar from "../../components/layout/Navbar";
 import {
   Container,
   Row,
@@ -19,6 +20,7 @@ class Profile extends Component {
   render() {
     return (
       <div style={{ fontFamily: "monospace" }} className="content background2">
+        <Navbar />
         <Container fluid>
           <Row>
             <Col md={4}>

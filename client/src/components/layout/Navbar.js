@@ -13,7 +13,7 @@ class Navbar extends Component {
   }
 
   dropdownClick = () => {
-    this.setState({
+      this.setState({
       dropdownClick: true
     });
   };
@@ -67,7 +67,7 @@ class Navbar extends Component {
 
               <li>
                 <NavDropdown
-                  onClick={this.dropdownClick}
+                  onClick={this.reverseDropdown}
                   title={<i className="material-icons">expand_more</i>}
                   id="nav-dropdown"
                   style={{
@@ -79,12 +79,12 @@ class Navbar extends Component {
                   {this.state.dropdownClick ? (
                     <>
                       <NavDropdown.Item
-                        onClick={this.dropdownClick}
+                        onClick={this.reverseDropdown}
                         className="dropdown-item"
                         eventKey="1"
                       >
                         <Nav.Link as={NavLink} to="/friends">
-                          ...a professional
+                          Contact a professional
                         </Nav.Link>
                       </NavDropdown.Item>
                       <NavDropdown.Item
@@ -93,7 +93,7 @@ class Navbar extends Component {
                         eventKey="2"
                       >
                         <Nav.Link as={NavLink} to="/vets">
-                          ...a vet
+                          Contact a vet
                         </Nav.Link>
                       </NavDropdown.Item>
                       <NavDropdown.Item>
