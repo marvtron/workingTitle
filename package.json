@@ -1,5 +1,5 @@
 {
-  "name": "paintpursuit",
+  "name": "workingTitle",
   "version": "1.0.0",
   "description": "An application with an \"instagram-esque\" UI intended to make a fun 'geocache' type community for finding and sharing murals and street art with friends. Points accumulate for a friendly competition element.",
   "main": "server.js",
@@ -12,15 +12,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/marvtron/PaintPursuit.git"
+    "url": "git+https://github.com/marvtron/workingTitle.git"
   },
   "keywords": [],
   "author": "Marvin Tryon Jr",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/marvtron/PaintPursuit/issues"
+    "url": "https://github.com/marvtron/workingTitle/issues"
   },
-  "homepage": "https://github.com/marvtron/PaintPursuit#readme",
+  "homepage": "https://github.com/marvtron/workingTitle#readme",
   "dependencies": {
     "axios": "^0.18.0",
     "bcryptjs": "^2.4.3",
