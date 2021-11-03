@@ -47,6 +47,6 @@
     "react-user-profile": "^1.0.3",
     "rsuite": "^3.8.4",
     "semantic-ui-react": "^0.87.1",
-    "validator": "^10.11.0"
+    "validator": "^13.7.0"
   }
 }
